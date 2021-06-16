@@ -1,11 +1,16 @@
-<%- include('bootheader') -%>
-<%- include('menubar') -%>
-    <div class="jumbotron">
-        <h1>Liang's Hearthstone Information Center</h1>
-        <img width="600" src="/images/logo.jpg">
-        <p>This webpage provides basic information about Hearthstone's battlegrounds, including heroes' rankings, game skills, and game versions</p>
-    </div>
 
 
-
-<%- include('bootfooter') -%>
+  <div class="jumbotron">
+    <h1> Authentication Demo </h1>
+    <p>Welcome to the Authentication Demo </p>
+    <ul>
+      <li><a href="/testing2">Go to a test page 2 </a></li>
+      <% if (loggedIn) {%>
+      <li><a href="/testing">Go to a test page </a></li>
+      <li><a href="/profile">See your profile </a></li>
+      <li><a href="/profiles">See everyone's profile</a></li>
+      <li><a href="/todo">See your to do list </a></li>
+      <li><a href="/todoAjax">See your to do list with Ajax </a></li>
+      <% } %>
+    </ul>
+  </div>
